@@ -1,0 +1,52 @@
+<div class="">
+  <app-secnav></app-secnav>
+  <div class="flex justify-between">
+    <div class="">
+      <h3>Save The Date</h3>
+      <h3 class="font-bold italic" [class]="textCodes.pBlue">11 November 2023</h3>
+    </div>
+    <span class=""></span>
+  </div>
+
+  <div class="h-[90vh] flex items-center justify-center md:!bg-contain !bg-cover"
+    style="background-image: url('assets/tobu-pic.png'); background-repeat: no-repeat; background-position: center;  ">
+    <div class="opacity-100 py-4 mdk:w-[50%] w-[100%] mx-auto p-3 rounded-lg" [class]="bgCodes.navyBlue">
+      <h2 class="text-lg font-semibold text-center z-30 opacity-100 mb-2" [class]="textCodes.skyBlue">
+        Wedding Day
+      </h2>
+      <div class="flex flex-col justify-center items-center mt-2 z-30 opacity-100">
+        <h1 class="text-4xl font-bold text-white" [class]="textCodes.navyBlue"><span class="text-[70px]" [class]="textCodes.pBlue">O</span>luwatosin </h1>
+        <span  class="text-5xl font-bold" [class]="textCodes.pBlue">&</span>
+        <h1 class="text-4xl font-bold text-white" [class]="textCodes.pBlue"><span class="text-[70px]" [class]="textCodes.pBlue">O</span>luwabukola</h1>
+        <button class="px-6 py-3 rounded-md mt-2 text-white font-medium bkg-transparent outline-2 border-2 z-20" [class]="miscProps.pBlue"  [class]="bgCodes.navyBlue"><a href="#gallery">Our Story</a></button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <app-countdown></app-countdown>
+  </div>
+  <div class="">
+    <app-invitation></app-invitation>
+  </div>
+  <div class="" id="gallery">
+    <app-lovestory></app-lovestory>
+  </div>
+ 
+  <div class="">
+    <app-location ></app-location>
+  </div>
+  <!-- <div>
+    <app-rsvp></app-rsvp>
+  </div> -->
+  <div>
+    <app-qna></app-qna>
+  </div>
+  <div class="mt-6 px-0 w-full">
+    <app-gift></app-gift>
+  </div>
+  <div  class="h-[40px] flex justify-center items-center text-white bg-[#2B2C32]">
+    <p class="text-center">#Olaoluwa exordium 2023</p>
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
