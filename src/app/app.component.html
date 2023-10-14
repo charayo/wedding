@@ -8,17 +8,20 @@
     <span class=""></span>
   </div>
 
-  <div class="h-[90vh] flex items-center justify-center md:!bg-contain !bg-cover"
-    style="background-image: url('assets/tobu-pic.png'); background-repeat: no-repeat; background-position: center;  ">
-    <div class="opacity-100 py-4 mdk:w-[50%] w-[100%] mx-auto p-3 rounded-lg" [class]="bgCodes.navyBlue">
+  <div class="h-[90vh] flex items-center justify-center md:!bg-cover !bg-cover"
+    style="background-image: url('assets/tbu.jpg'); background-repeat: no-repeat; background-position: center;  ">
+    <div class="opacity-80 py-4 mdk:w-[50%] w-[100%] mx-auto p-3 rounded-lg" [class]="bgCodes.navyBlue">
       <h2 class="text-lg font-semibold text-center z-30 opacity-100 mb-2" [class]="textCodes.skyBlue">
         Wedding Day
       </h2>
       <div class="flex flex-col justify-center items-center mt-2 z-30 opacity-100">
-        <h1 class="text-4xl font-bold text-white" [class]="textCodes.navyBlue"><span class="text-[70px]" [class]="textCodes.pBlue">O</span>luwatosin </h1>
-        <span  class="text-5xl font-bold" [class]="textCodes.pBlue">&</span>
-        <h1 class="text-4xl font-bold text-white" [class]="textCodes.pBlue"><span class="text-[70px]" [class]="textCodes.pBlue">O</span>luwabukola</h1>
-        <button class="px-6 py-3 rounded-md mt-2 text-white font-medium bkg-transparent outline-2 border-2 z-20" [class]="miscProps.pBlue"  [class]="bgCodes.navyBlue"><a href="#gallery">Our Story</a></button>
+        <h1 class="text-4xl font-bold text-white" [class]="textCodes.navyBlue"><span class="text-[70px]"
+            [class]="textCodes.pBlue">O</span>luwatosin </h1>
+        <span class="text-5xl font-bold" [class]="textCodes.pBlue">&</span>
+        <h1 class="text-4xl font-bold text-white" [class]="textCodes.pBlue"><span class="text-[70px]"
+            [class]="textCodes.pBlue">O</span>luwabukola</h1>
+        <button class="px-6 py-3 rounded-md mt-2 text-white font-medium bkg-transparent outline-2 border-2 z-20"
+          [class]="miscProps.pBlue" [class]="bgCodes.navyBlue"><a href="#gallery">Our Story</a></button>
       </div>
     </div>
   </div>
@@ -28,12 +31,43 @@
   <div class="">
     <app-invitation></app-invitation>
   </div>
-  <div class="" id="gallery">
-    <app-lovestory></app-lovestory>
+  <div class="h-full py-6" id="gallery" [class]="bgCodes.navyBlue">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold p-4 text-white">Our Love Story</h1>
+      <p class="text-center text-white">#Olaoluwaexordium23</p>
+    </div>
+
+      <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+        <div class="-m-1 flex flex-wrap md:m-2">
+          <div class="lg:flex lg:w-1/2 lg:flex-wrap">
+            <div class="w-full p-1 md:p-2">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                src="../../assets/photo11.jpg" />
+            </div>
+          </div>
+          <div class="lg:flex lg:w-1/2 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+              <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                src="../../assets/tbu.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div class="grid grid-cols-12 lg:w-1/2 w-[80%] mx-auto space-x-4 flex flex-col">
+      <div class="md:col-span-6 col-span-12">
+        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+          src="../../assets/photo11.jpg" />
+      </div>
+      <div class="md:col-span-6 col-span-12 h-full">
+        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+          src="../../assets/tbu.jpg" />
+      </div>
+    </div> -->
   </div>
- 
+
   <div class="">
-    <app-location ></app-location>
+    <app-location></app-location>
   </div>
   <!-- <div>
     <app-rsvp></app-rsvp>
@@ -44,7 +78,7 @@
   <div class="mt-6 px-0 w-full">
     <app-gift></app-gift>
   </div>
-  <div  class="h-[40px] flex justify-center items-center text-white bg-[#2B2C32]">
+  <div class="h-[40px] flex justify-center items-center text-white bg-[#2B2C32]">
     <p class="text-center">#Olaoluwaexordium23</p>
   </div>
 </div>
