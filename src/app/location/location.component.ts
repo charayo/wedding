@@ -8,5 +8,16 @@ import { ColorcodesService } from '../colorcodes.service';
 })
 export class LocationComponent {
   colorCodes: ColorcodesService = inject(ColorcodesService);
+  stateChurch = true;
+
+  churchState() {
+    this.stateChurch = true;
+  }
+
+  receptionState() {
+    this.stateChurch = false;
+  }
+  ngOnIt() {
+  }
 
 }

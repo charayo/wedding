@@ -1,35 +1,43 @@
 <div class="py-6 my-6">
     <h1 class="text-4xl  font-bold mb-3 text-center py-4">Programme Venue:</h1>
-    <div class="lg:grid h-full lg:grid-cols-12 gap-2 lg:w-[90%] mx-auto">
-        <div class="lg:col-span-8 h-full">
+    <div class="flex justify-center items-center space-x-6 mb-4 md:hidden">
+        <button
+            class="px-6 w-[150px] py-2 rounded-md mt-2 text-white font-medium  outline-2 border-2 border-black bg-black"
+            (click)="churchState()"
+            [ngClass]="{ 'text-white bg-black' : stateChurch, 'text-black bg-transparent':!stateChurch}">Church</button>
+        <button
+            class="px-6 w-[150px] py-2 rounded-md mt-2 text-black font-medium  outline-2 border-2 border-black bg-transparent"
+            (click)="receptionState()"
+            [ngClass]="{ 'text-white bg-black' : !stateChurch, 'text-black bg-transparent':stateChurch }">Reception</button>
+    </div>
+
+    <div class="lg:grid h-[70vh] lg:grid-cols-12 gap-2 lg:w-[90%] mx-auto">
+        <div class="md:col-span-6 col-span-12 h-[60vh] px-2"
+            [ngClass]="{ 'md:block hidden' : stateChurch, 'block':!stateChurch}">
+            <div class="flex-col mr-1 items-center justify-center mb-2 h-[100px]">
+                <h2 class="text-2xl font-semibold mb-1 text-center " [class]="colorCodes.textCodes.navyBlue">Church
+                    Venue: </h2>
+                <p class="text-center px-6">
+                    RCCG, Zonal Headquaters Adjacent KAPDA Office, Zamani Junction Along Abacha Road, Maraba.
+                </p>
+            </div>
             <iframe class=" w-[100%] mx-auto h-full rounded-lg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5082971860124!2d7.587404299999999!3d9.0173095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0f184e7161db%3A0xe674ec120509e91f!2sRCCG%20Our%20God%20Reigns%20Assembly%2C%20Abacha%20Road.!5e0!3m2!1sen!2sng!4v1696242434066!5m2!1sen!2sng">
             </iframe>
         </div>
-        <div class="lg:col-span-4">
-            <div class="flex flex-col items-center justify-center h-full mt-4">
-                <h1 class="md:text-5xl text-4xl font-bold mb-1 text-center" [class]="colorCodes.textCodes.navyBlue">When & Where
-                </h1>
-                <h2 class="text-lg font-semibold mb-1 text-center " [class]="colorCodes.textCodes.navyBlue">Church
+
+        <div class="md:col-span-6 col-span-12 h-[60vh] px-2"
+            [ngClass]="{ 'md:block hidden' : !stateChurch, 'block':!stateChurch}">
+            <div class="flex-col mr-1 items-center justify-center mb-2 h-[100px]">
+                <h2 class="text-2xl font-semibold mb-1 text-center " [class]="colorCodes.textCodes.navyBlue">Reception
                     Venue:</h2>
                 <p class="text-center px-6">
-                    RCCG, Zonal Headquaters Adjacent KAPDA Office, Zamani Junction Along Abacha Road, Maraba.
+                    Joseph Court, Royal Estate, Abacha Road, Maraba.
                 </p>
-                <div class="flex mt-4 flex-col">
-                    <div class="flex-col mr-1 items-center justify-center">
-                        <h2 class="text-lg font-semibold mb-1 text-center mr-1" [class]="colorCodes.textCodes.navyBlue">
-                            Reception Venue:</h2>
-                        <p class="text-center">Joseph Court </p>
-                    </div>
-                    <div class="lg:col-span-8 h-full py-2">
-                        <iframe class=" w-[100%] mx-auto h-full rounded-lg"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.438108490676!2d7.592089499999999!3d9.0237382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e09ebde889767%3A0xc78a37a4ef43bca6!2sJoseph%20court!5e0!3m2!1sen!2sus!4v1696302393004!5m2!1sen!2sus"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
             </div>
+            <iframe class=" w-[100%] mx-auto h-full rounded-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.438108490676!2d7.592089499999999!3d9.0237382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e09ebde889767%3A0xc78a37a4ef43bca6!2sJoseph%20court!5e0!3m2!1sen!2sus!4v1696302393004!5m2!1sen!2sus">
+            </iframe>
         </div>
 
     </div>
