@@ -48,10 +48,16 @@ export class CountdownComponent {
     let timeLeft = this.dateDiff(fixedDay)
     this.day = timeLeft.day.toString();
     this.hours = timeLeft.hour.toString();
-    this.mins = timeLeft.min.toString();
+    this.mins = timeLeft.min.toString()
+    if (Number(this.day) < 0) {
+
+      this.day = "00";
+      this.hours = "00";
+      this.mins = "00";
+    }
   }
   ngOnInit(): void {
-    setInterval(()=>{
+    setInterval(() => {
       this.setWeddingDate("November 11, 2023");
     }, 60000)
     this.setWeddingDate("November 11, 2023");
